@@ -1,0 +1,669 @@
+
+/**************  Default-CSS  **************/
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	color: #4D7C73;
+	font-size: 16px;
+	font-weight: 400;
+	overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.anim{
+	transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+}
+
+a,
+div a:hover,
+div a:active,
+div a:focus,
+button {
+	text-decoration: none;
+	transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+}
+
+a,
+span,
+a:hover,
+a:active,
+button {
+	text-decoration: none;
+}
+
+*::after,
+*::before,
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a:focus, button:focus, input:focus, select:focus {
+	outline: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+* {
+	outline: none !important;
+}
+
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	margin: 0;
+}
+
+p{
+	margin: 0;	
+}
+
+img {
+	max-width: 100%;
+}
+.cm-overflow{
+	overflow: hidden !important;
+}
+.container,
+.col,
+.row > *{
+    padding: 0 15px;
+}
+.row{
+    margin: 0 -15px;
+}
+.cm_btn{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-color: #FFCE55;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	border-radius: 50px;
+	border: unset;
+	font-weight: bold;
+	font-size: 18px;
+	color: #4D7C73;
+}
+.cm_btn:hover{
+	background-color: #4D7C73;
+	color: #fff;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/**************  Default-CSS End  **************/
+
+/**************  Sign In and Registaton Page Start **************/
+.common_main_wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.common_inner{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 50px 40px;
+}
+.common_inner_left{
+    background-color: #A2CDC5;
+}
+.welcome_text p{
+	font-size: 35px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.1;
+}
+.welcome_text span{
+	font-size: 20px;
+	color: #fff;
+	line-height: 2;
+}
+.common_logo_and_info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.welcome_text{
+	text-align: center;
+	margin: 50px 0;
+}
+/**************  Sign In and Registaton Page End **************/
+
+/**************  Dashborad Page Start **************/
+.dashboard_wrap{
+	background-color: #ECF6F5;
+}
+.sidebar_wrapper {
+    position: fixed;
+    top: 0;
+    width: 250px;
+	height: 100%;
+    z-index: 100;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -ms-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+.sidebar_block {
+    height: 100%;
+    overflow-y: auto;
+    background-color: #ECF6F5;
+}
+.main_content_lg {
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: block;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px 30px;
+    overflow-y: auto;
+}
+.sidebar_reduced .sidebar_wrapper {
+    width: 160px;
+}
+.sidebar_reduced .menu_text {
+    opacity: 1;
+    right: -240px;
+}
+.menu_text {
+    font-size: 18px;
+    color: #4D7C73;
+    line-height: 1;
+    -webkit-transition: transform 0.7s ease-in-out;
+    -moz-transition: transform 0.7s ease-in-out;
+    -ms-transition: transform 0.7s ease-in-out;
+    -o-transition: transform 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out;
+    position: relative;
+	right: 0;
+    flex-basis: 100%;
+    white-space: nowrap;
+    display: inline-block;
+	font-weight: 600;
+}
+.sidebar_reduced .main_content {
+    padding-left: 160px;
+}
+.sidebar_menu {
+    overflow: hidden;
+    margin-top: 165px;
+}
+.sidebar_menu ul li a, .sidebar_menu_sec ul li a {
+    display: flex;
+    align-items: center;
+    padding: 3px 17px;
+}
+.menu_icon {
+    margin-right: 18px;
+    flex: 0 0 51px;
+    text-align: left;
+    padding: 12px;
+    border-radius: 5px;
+}
+.logo{
+	display: flex;
+	justify-content: center;
+}
+.menu_trigger {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #FFCE55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 55px;
+    right: 0;
+    transform: translateX(50%);
+}
+.sidebar_menu_block {
+    padding: 30px 0;
+}
+.sidebar_reduced .sidebar_menu ul li a,
+.sidebar_reduced .sidebar_menu_sec ul li a {
+    display: flex;
+    align-items: center;
+    padding: 3px 45px;
+}
+.main_content {
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 25px 25px 25px 250px;
+    -webkit-transition: padding 0.5s ease-in-out;
+    -moz-transition: padding 0.5s ease-in-out;
+    -ms-transition: padding 0.5s ease-in-out;
+    -o-transition: padding 0.5s ease-in-out;
+    transition: padding 0.5s ease-in-out;
+}
+.sidebar_menu ul > li a.active .menu_icon{
+    background: linear-gradient(99.54deg, #A2CDC5 7.46%, #4D7C73 95.68%);
+}
+.sidebar_menu ul li a.active .menu_icon img{
+    filter: brightness(0) invert(1);
+}
+.sidebar_block::-webkit-scrollbar-track,
+.main_content_lg::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.sidebar_block::-webkit-scrollbar,
+.main_content_lg::-webkit-scrollbar{
+	width: 0px;
+	background-color: #F5F5F5;
+}
+.sidebar_block::-webkit-scrollbar-thumb,
+.main_content_lg::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.accordion_menu_info ul li + li{
+    margin-top: 5px;
+}
+.accordion_menu_info ul li a {
+    color: #000000;
+    padding: 8px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.accordion_menu_info ul{
+    padding: 0 30px;
+}
+.sidebar_menu ul li .accordion_menu_info ul li a.active,
+.sidebar_menu ul li .accordion_menu_info ul li a:hover{
+    background: #A2CDC5;
+}
+.accordion_menu_info{
+    padding: 10px 0;
+    display: none;
+}
+.mobile_menu_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ecf6f5;
+    top: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 10;
+}
+.red_text{
+    color: #F31717;
+}
+.blur_text{
+    color: #0D16F3;
+}
+.gren_text{
+    color: #099545;
+}
+.common_btn{
+    min-width: 115px;
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(162, 205, 197, 0.44) 0%, rgba(229, 229, 229, 0) 100%), linear-gradient(180deg, #A2CDC5 0%, rgba(12, 153, 233, 0) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #000000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.common_btn:hover{
+    color: #000;
+}
+.all_button_wrap{
+    margin: 23px 0;
+}
+.all_button_wrap ul{
+    display: flex;
+    align-items: center;
+}
+.all_button_wrap ul li + li{
+    margin-left: 35px;
+}
+.common_content_pad_block{
+    position: relative;
+}
+.cart_top_wrap ul{
+    display: flex;
+    align-items: center;
+}
+.cart_top_wrap{
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+.cart_top_wrap ul li + li{
+    margin-left: 35px;
+}
+.cart_wrap,
+.notification_wrap{
+    position: relative;
+}
+.cart_wrap::after, 
+.notification_wrap::after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translate(6px, 1px);
+}
+.notification_wrap::after {
+    transform: translate(4px, 0px);
+}
+.top_right_icon{
+    cursor: pointer;
+}
+.cm_tab_contain{
+    display: none;
+}
+.cm_tab_contain.active{
+    display: block;
+}
+.pass_text{
+    color: #099545;
+}
+.pause_text{
+    color: #FFCE55;
+}
+.pending{
+    color: #FFF3C0;
+}
+.darft_text{
+    color: #2C56EC;
+}
+.error_text{
+    color: #D53129;
+}
+.common_modal .modal-body{
+    padding-top: 50px;
+}
+.close_btn{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.close_btn i{
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+}
+.sidebar_reduced .sidebar_menu ul li .accordion_menu_info ul li a{
+    padding: 8px 15px;
+}
+.sidebar_reduced .accordion_menu_info ul {
+    padding: 0 10px;
+}
+.modal_close_btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4D7C73;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_close_btn button{
+    opacity: unset;
+    filter: brightness(0) invert(1);
+}
+.product_list_wrap .modal-body {
+    padding: 45px 15px;
+}
+.gst_select.select_wrap{
+    max-width: 220px;
+    width: 100%;
+}
+/**************  Dashborad Page End **************/
+
+/**************  Single product Page Start **************/
+.common_title h2{
+    font-size: 40px;
+    color: #686262;
+    line-height: 1;
+    font-weight: bold;
+}
+.cm_title_input h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #686262;
+    margin-bottom: 20px;
+}
+/**************  Single product Page End **************/
+
+.upload_btn{
+    max-width: 150px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D7C73;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+}
+.upload_wrap{
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 1680px) {
+    /**************  Single product Page Start **************/
+    .common_title h2{
+        font-size: 34px;
+    }
+    .cm_title_input h2{
+        font-size: 30px;
+    }
+    /**************  Single product Page End **************/
+}
+
+@media screen and (max-width: 1360px) {
+    .common_btn{
+        min-height: 40px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .cart_top_wrap{
+        top: 0px;
+    }
+    .common_content_pad_block {
+        padding-top: 40px;
+    }
+    .main_content_lg{
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width: 991px) {
+    /**************  Sign In and Registaton Page Start **************/
+    .welcome_text p{
+        font-size: 30px;
+    }
+    .welcome_text span{
+        font-size: 16px;
+    }
+    .welcome_text {
+        margin: 30px 0;
+    }
+    /**************  Sign In and Registaton Page End **************/
+
+    .main_content_lg{
+        height: calc(100vh - 40px);
+    }
+    .tooltip{
+        display: none !important;
+    }
+    .main_content_lg{
+        padding: 15px;
+    }
+    .sidebar_wrapper{
+        transform: translateX(-100%);
+        -webkit-transition: transform 0.5s ease-in-out;
+        -moz-transition: transform 0.5s ease-in-out;
+        -ms-transition: transform 0.5s ease-in-out;
+        -o-transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+    }
+    .main_content{
+        padding: 20px;
+    }
+    .mobile_menu_header .menu_trigger{
+        display: none;
+    }
+    .menu_trigger{
+        position: unset;
+        transform: unset;
+    }
+    .common_content_pad_block {
+        padding-top: 45px;
+    }
+    .sidebar_reduced .main_content {
+        padding-left: 20px;
+    }
+    .sidebar_reduced .sidebar_wrapper {
+        transform: translateX(0);
+    }
+    .sidebar_reduced .menu_text {
+        opacity: 1;
+        right: unset;
+    }
+    .sidebar_reduced .sidebar_menu ul li a, .sidebar_reduced .sidebar_menu_sec ul li a {
+        padding: 5px 12px;
+    }
+    .menu_icon {
+        flex: 0 0 45px;
+        padding: 10.5px 12px;
+    }
+    .sidebar_wrapper,
+    .sidebar_reduced .sidebar_wrapper {
+        width: 220px;
+    }
+    .menu_text {
+        font-size: 16px;
+    }
+    .menu_icon {
+        margin-right: 15px;
+    }
+    .sidebar_menu {
+        margin-top: 120px;
+    }
+
+    /**************  Single product Page Start **************/
+    .cm_title_input h2 {
+        font-size: 26px;
+    }
+    /**************  Single product Page End **************/
+}
+@media screen and (max-width: 767px) {
+    /**************  Sign In and Registaton Page Start **************/
+    .common_inner {
+        width: 100%;
+        height: auto;
+        padding: 30px 15px;
+    }
+    .logo{
+        max-height: 125px;
+    }
+    .main_content_lg {
+        height: calc(100vh - 30px);
+    }
+   /**************  Sign In and Registaton Page End **************/
+
+    .main_content {
+        padding: 15px;
+    }
+    
+    /**************  Single product Page Start **************/
+    .common_title h2 {
+        font-size: 30px;
+    }
+    .cm_title_input h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    /**************  Single product Page End **************/
+}
+
+
+@media screen and (max-width: 575px) {
+    .common_btn {
+        font-size: 12px;
+    }
+    .common_btn{
+        min-width: 100px;
+    }
+    .main_content_lg {
+        padding: 15px;
+    }
+    .logo_img{
+        max-width: 45px;
+    }
+    .mobile_menu_header{
+        padding: 20px 0;
+    }
+    .sidebar_menu {
+        margin-top: 80px;
+    }
+    .common_modal .modal-dialog {
+        max-width: 290px;
+        margin: 20px auto;
+    }
+    .sidebar_reduced .main_content {
+        padding-left: 15px;
+    }
+    .upload_wrap {
+        margin-top: 20px;
+    }
+}

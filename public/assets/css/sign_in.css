@@ -1,0 +1,80 @@
+/**************  Sign In Page Start **************/
+.sign_in_page .sign_in_info{
+    max-width: 500px;
+    width: 100%;
+}
+.sign_in_page .cm_title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.sign_in_page .input_label{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.sign_in_page .common_input_wrap{
+    width: 100%;
+    margin-top: 30px;
+}
+.sign_in_page .common_input_wrap input{
+    width: 100%;
+    height: 48px;
+    border-radius: 48px;
+    background-color: rgba(162, 205, 197, 0.1);
+    padding: 10px 20px;
+    color: #4D7C73;
+    outline: none;
+    border: unset;
+}
+.sign_in_page .common_input_wrap input::placeholder{
+    color: #666666;
+}
+.sign_in_page .account_text{
+	color: #000000;
+}
+.sign_in_page .account_text a{
+	color: #4D7C73;
+	font-weight: bold;
+}
+.sign_in_page .account_text a:hover{
+	opacity: 0.6;
+}
+.sign_in_page .sign_in_info .cm_btn{
+	margin: 30px 0;
+}
+/**************  Sign In Page End **************/
+
+@media screen and (max-width: 1199px) {
+    /**************  Sign In Page Start **************/
+    .sign_in_page .cm_title {
+        font-size: 42px;
+    }
+    .sign_in_page .sign_in_info{
+        max-width: 450px;
+    }
+    /**************  Sign In Page End **************/
+}
+@media screen and (max-width: 575px) {
+    /**************  Sign In Page Start **************/
+    .sign_in_page .cm_title {
+        font-size: 36px;
+    }
+    .sign_in_page .common_input_wrap {
+        margin-top: 20px;
+    }
+    .sign_in_page .sign_in_info .cm_btn {
+        margin: 20px 0;
+    }
+    .sign_in_page .cm_btn{
+        height: 48px;
+    }
+    /**************  Sign In Page End **************/
+}
+    
+@media screen and (max-width: 400px) {
+    /**************  Sign In Page Start **************/
+    .sign_in_page .cm_title {
+        font-size: 34px;
+    }
+    /**************  Sign In Page End **************/
+}

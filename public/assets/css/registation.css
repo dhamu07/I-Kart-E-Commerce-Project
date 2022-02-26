@@ -1,0 +1,442 @@
+/**************  Registation Page Start **************/
+.registation_page .registation_title{
+    font-size: 36px;
+    color: #4D7C73;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.registation_page .common_inner_right.common_inner {
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.registation_page .registation_info{
+    width: 100%;
+    text-align: center;
+}
+.registation_page .progressbar_wrap{
+    display: flex;
+    align-items: center;
+}
+.registation_page #progressbar {
+    margin: 50px 0;
+    counter-reset: step;
+    position: relative;
+    z-index: 1;
+}
+.registation_page #progressbar li {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.registation_page #progressbar li::after {
+    content: ' ';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: #EDEDED;
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
+.registation_page #msform {
+	text-align: center;
+	position: relative;
+}
+.registation_page #msform fieldset {
+	border: 0 none;
+	border-radius: 3px;
+	box-sizing: border-box;
+	width: 100%;
+	position: relative;
+}
+.registation_page #msform fieldset:not(:first-of-type) {
+	display: none;
+}
+.registation_page .progress_circle{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A2CDC5;
+    transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+}
+.registation_page .progressbar_wrap li.active .progress_circle::after{
+    content: ' ';
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    border: 2px solid #4D7C73;
+    border-radius: 100%;
+}
+.registation_page .progressbar_wrap li.active .progress_circle{
+    background-color: #4D7C73;
+}
+.registation_page .progressbar_wrap li.active .progress_circle img{
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+.registation_page #progressbar li.active::after{
+    background-color: #4D7C73;
+}
+.registation_page .fieldset_wrap {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+.registation_page .res_input_label{
+    font-size: 18px;
+    color: #4D7C73;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.registation_page .res_input_label span{
+    color: #FF0000;
+}
+.registation_page .res_input_wrap{
+    display: flex;
+    align-items: center;
+}
+.registation_page .res_input_wrap + .res_input_wrap{
+    margin-top: 20px;
+}
+.registation_page .res_input_wrap input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(162, 205, 197, 0.1);
+    padding: 10px 15px;
+    color: #4D7C73;
+    border-radius: 50px;
+}
+.registation_page .res_input_wrap input::placeholder{
+    color: #666666;
+}
+.registation_page .get_otp_btn{
+    min-width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #A2CDC5;
+    margin-left: 10px;
+    padding: 10px;
+}
+.registation_page .get_otp_btn.browse_btn{
+    min-width: 112px;
+    cursor: pointer;
+}
+.registation_page .get_otp_btn:hover{
+    background-color: #4D7C73;
+}
+.registation_page .res_common_input_wrap + .res_common_input_wrap{
+    margin-top: 30px;
+}
+.registation_page .next_btn_wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.registation_page .continue_btn{
+    max-width: 146px;
+    width: 100%;
+    height: 50px;
+    background-color: #4D7C73;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.registation_page .continue_btn:hover{
+    background-color: #FFCE55;
+}
+.registation_page .progressbar_wrap li > span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #A2CDC5;
+    margin-top: 10px;
+}
+.registation_page .progressbar_wrap li.active > span{
+    color: #4D7C73;
+}
+.registation_page .res_common_input_wrap .Optional{
+    color: #FFCE55;
+}
+.custom_radio input[type="radio"] + label {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5em;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+.custom_radio input{
+    display: none;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #4D7C73;
+    border-radius: 100%;
+    background: #fff;
+    transform: translateY(-50%);
+}
+[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #4D7C73;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    transform: translateY(-50%);
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: translateY(-50%) scale(0);
+    transform: translateY(-50%) scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+}
+.radio_wrap{
+    display: flex;
+    align-items: center;
+}
+.custom_radio {
+    flex-grow: 1;
+}
+.file-select {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(162, 205, 197, 0.1);
+}
+.file-select-name{
+	display: block;
+	width: 100%;
+    padding: 0px 15px;
+}
+.registation_page .res_input_wrap .file-select1{
+    position: relative;
+    margin-left: 10px;
+}
+.registation_page .res_input_wrap .file-select1 .get_otp_btn{
+    margin-left: 0px;
+}
+.registation_page .res_input_wrap .file-select1 input:hover + button{
+    background-color: #FFCE55;
+}
+.registation_page .res_input_wrap .file-select1 input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 25px 50px;
+}
+.registation_page .next_btn_wrap button + button{
+    margin-left: 15px;
+}
+.registation_page .verify_btn.active{
+    background-color: #FFCE55;
+}
+.registation_page .fieldset_wrap_3,
+.registation_page .fieldset_wrap_4,
+.registation_page .fieldset_wrap_5{
+    padding-top: 100px;
+}
+/**************  Registation Page End **************/
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .registation_page .res_input_label,
+    .registation_page .progressbar_wrap li > span{
+        font-size: 16px;
+    }
+    .registation_page .progress_circle{
+        width: 45px;
+        height: 45px;
+    }
+    .registation_page .progressbar_wrap li .progress_circle img{
+        max-width: 20px;
+    }
+    .registation_page .res_input_wrap input,
+    .registation_page .get_otp_btn{
+        height: 48px;
+        border-radius: 48px;
+    }
+    .registation_page #progressbar li::after{
+        top: 22px;
+    }
+    .registation_page .registation_title{
+        font-size: 32px;
+    }
+    .registation_page .fieldset_wrap_3,
+    .registation_page .fieldset_wrap_4,
+    .registation_page .fieldset_wrap_5{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .registation_page .common_main_wrap{
+        height: auto;
+    }
+    .registation_page .common_inner{
+        width: 100%;
+    }
+    .registation_page #msform {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .registation_page .common_inner_right.common_inner{
+        overflow-y: unset;
+    }
+}
+@media screen and (max-width: 991px) {
+    .registation_page .registation_title {
+        font-size: 30px;
+    }
+    .registation_page .res_input_label, .registation_page .progressbar_wrap li > span {
+        font-size: 15px;
+    }
+    .registation_page .res_input_label, .registation_page .progressbar_wrap li > span {
+        font-size: 14px;
+    }
+    .registation_page #progressbar{
+        margin: 40px 0;
+    }
+    .registation_page .fieldset_wrap_3,
+    .registation_page .fieldset_wrap_4,
+    .registation_page .fieldset_wrap_5{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .registation_page .registation_title {
+        font-size: 26px;
+    }
+    .registation_page .progressbar_wrap li > span {
+        font-size: 12px;
+    }
+    .registation_page .progress_circle {
+        width: 40px;
+        height: 40px;
+    }
+    .registation_page .progressbar_wrap li .progress_circle img {
+        max-width: 18px;
+    }
+    .registation_page #progressbar li::after{
+        height: 3px;
+        top: 20px;
+    }
+    .registation_page .get_otp_btn{
+        min-width: 100px;
+    }
+    .registation_page #progressbar{
+        margin: 30px 0;
+    }
+    .registation_page .res_input_wrap input{
+        width: 100%;
+    }
+    .registation_page .res_input_wrap {
+        flex-wrap: wrap;
+    }
+    .registation_page .get_otp_btn{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .registation_page .get_otp_btn + .get_otp_btn{
+        margin-left: 10px;
+    }
+    .registation_page .fieldset_wrap_3,
+    .registation_page .fieldset_wrap_4,
+    .registation_page .fieldset_wrap_5{
+        padding-top: 0px;
+    }
+    .registation_page .res_input_wrap .file-select1 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .registation_page .get_otp_btn.browse_btn{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .registation_page .progressbar_wrap li > span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 367px) {
+    .radio_wrap {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+}
